@@ -1,0 +1,70 @@
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #fff;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+.contact-text p{
+    font-size: 32px;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+.contact-text h6,
+.contact-text .address,
+.contact-text .mail{
+    font-size: 20px;
+}
+.contact-text h6{
+    color: hsl(223deg 57% 12%);
+}
+.contact-form{
+    flex-basis: 48%;
+}
+.cont .contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+.cont .contact-form form label{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.cont .contact-form form input,
+.cont .contact-form form textarea{
+    font-size: 20px;
+    padding: 10px 0;
+    resize: none;
+    margin: 6px 0;
+    border-radius: 12px;
+    outline: none;
+    border: 2px solid #666;
+}
+.cont .contact-form form input[type="submit"]{
+    margin: 16px 0;
+    width: 26%;
+    cursor: pointer;
+    border: 2px solid hsl(223deg 57% 12%);
+    font-size: 20px;
+    background-color:#f04350;
+    color: #000;
+    font-weight: 500;
+    transition: 0.4s;
+}
+.cont .contact-form form input[type="submit"]:hover{
+    background-color: #f40350;
+    color: white;
+    font-weight: 600;
+}
